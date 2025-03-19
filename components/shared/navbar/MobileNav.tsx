@@ -12,6 +12,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { sidebarLinks } from "@/constants";
 import { usePathname } from "next/navigation";
+import logo from "@/public/assets/images/logo-layer.svg";
 
 const NavContent = () => {
   const pathname = usePathname();
@@ -71,14 +72,14 @@ const MobileNav = () => {
       >
         <Link href="/" className="flex items-center gap-1">
           <Image
-            src="/assets/images/site-logo.svg"
+            src={logo}
             width={23}
             height={23}
-            alt="DevFlow"
+            alt="OverFlow"
           />
 
           <p className="h2-bold text-dark100_light900 font-spaceGrotesk">
-            Dev <span className="text-primary-500">Overflow</span>
+            Over <span className="text-primary-500 h2-bold">Flow</span>
           </p>
         </Link>
         <div>

@@ -5,7 +5,8 @@
 @import url("../styles/theme.css");
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: sans-serif;
+  @apply bg-white text-black dark:bg-black dark:text-white;
 }
 
 @layer utilities {

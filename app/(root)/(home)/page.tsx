@@ -45,8 +45,8 @@ export default async function Home({ searchParams }: SearchParamsProps) {
       filter: searchParams.filter,
       page: searchParams.page ? +searchParams.page : 1,
     });
-  }
-
+  }  
+  
   return (
     <>
       <div className="flex w-full flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">
@@ -54,7 +54,7 @@ export default async function Home({ searchParams }: SearchParamsProps) {
 
         <Link href="/ask-question" className="flex justify-end max-sm:w-full">
           <Button className="primary-gradient min-h-[46px] px-4 py-3 !text-light-900">
-            Ask a Question
+            Ask a Question 🚀
           </Button>
         </Link>
       </div>
